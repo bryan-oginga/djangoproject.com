@@ -505,6 +505,11 @@ header {
         @include respond-min(1080px) {
             margin-left: 10px;
         }
+
+        &:focus {
+            outline: 2px solid var(--menu);
+        }
+
     }
 
     .header-tools {
@@ -1013,7 +1018,7 @@ footer {
 
             &:focus {
                 outline: 2px solid var(--menu);
-            }
+            } 
         }
     }
 
@@ -2414,9 +2419,7 @@ h2+.list-link-soup {
 
     &:hover li.other,
     &.open li.other {
-        @include respond-min(1200px) {
-            display: inline-block;
-        }
+        display: inline-block;
     }
 }
 
@@ -2720,7 +2723,7 @@ search.filters {
     position: relative;
 
     a {
-      padding: 10px 20px;
+      padding: 10px 15px;
       text-decoration: none;
       border-bottom: 3px solid transparent;
       transition: color 0.3s ease, border-bottom 0.3s ease;
